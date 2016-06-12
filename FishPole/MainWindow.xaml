@@ -1,0 +1,47 @@
+﻿<Window x:Class="Fishpole.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fishpole"
+        mc:Ignorable="d"
+        Title="FishPole" Height="350" Width="525" Background="#FF70CBC7">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Name="addStack" DataContext="MainWindow" Grid.Column="0" Visibility="Visible">
+            <StackPanel DataContext="Fish">
+            <Label Name="wordLabel" Content="Dodaj Słówko" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <TextBox Name="wordBox" Text="{Binding Word}" Margin="0,10,5,0" Background="#FF70CBC7" HorizontalAlignment="Left" Width="100"/>
+            </StackPanel>
+            <StackPanel DataContext="Fish">
+            <Label Name="translatedLabel" Content="Tłumaczenie" HorizontalAlignment="Left"/>
+                <TextBox Name="translatedBox" Text="{Binding Translated}" Margin="0,10,5,0" Background="#FF70CBC7" HorizontalAlignment="Left" Width="100"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="addButton" Content="Dodaj" Width="50" Margin="0,10,5,0" HorizontalAlignment="Left" Click="addButton_Click"/>
+                <Button Name="removeButton" Content="Usuń" Width="50" Margin="0,10,5,0" Click="removeButton_Click"/>
+
+            </StackPanel>
+            <Button Name="loadButton" Margin="0,20,0,0" Content="Wczytaj plik" HorizontalAlignment="Center" Click="loadButton_Click"/>
+            <Button Name="startButton" Content="Start" Width="120" Height="35" Margin="0,45,5,0" HorizontalAlignment="Center" Click="startButton_Click"/>
+
+        </StackPanel>
+
+
+        <ListView Name="listView" Grid.Column="1" Background="#FF70CBC7">
+            <ListView.View >
+                <GridView >
+                    <GridViewColumn Header="Słówko" DisplayMemberBinding="{Binding Word}"/>
+                    <GridViewColumn Header="Tłumaczenie" DisplayMemberBinding="{Binding Translated}"/>
+                    <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}"/>
+                </GridView>
+            </ListView.View>
+            
+        </ListView>
+
+    </Grid>
+</Window>

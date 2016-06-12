@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Fish>
+    <Word>pies</Word>
+    <Translated>dog</Translated>
+    <Level>0</Level>
+    <Id>1</Id>
+  </Fish>
+  <Fish>
+    <Word>kot</Word>
+    <Translated>cat</Translated>
+    <Level>0</Level>
+    <Id>2</Id>
+  </Fish>
+  <Fish>
+    <Word>stół</Word>
+    <Translated>table</Translated>
+    <Level>0</Level>
+    <Id>3</Id>
+  </Fish>
+  <Fish>
+    <Word>dziedziczyć</Word>
+    <Translated>inherit</Translated>
+    <Level>0</Level>
+    <Id>4</Id>
+  </Fish>
+  <Fish>
+    <Word>piłka</Word>
+    <Translated>ball</Translated>
+    <Level>0</Level>
+    <Id>5</Id>
+  </Fish>
+</ArrayOfFish>
