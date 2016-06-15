@@ -1,0 +1,5 @@
+Gra do nauki s³ówek metod¹ fiszek.
+Pierwsze okno.
+Istniej¹ dwie mozliwoœci dodawania s³ówek do nauki. Rêczne wpisywanie i dodawanie s³ów do listy lub za³adowanie jej z pliku xml. Po za³adowaniu s³ówek mo¿na zacz¹æ grê. 
+Drugie okno.
+W ka¿dej rundzie gracz potwierdza lub zaprzecza znajomoœæ ka¿dego s³ówka z listy za pomoc¹ przycisków "Znam" oraz "Nie znam". Po szeœciu kolejnych klikniêciach przycisku "Znam" s³ówko jest usuwane z listy i pojawia siê komunikat potwierdzaj¹cy nauczenie siê nowego s³owa. Po ka¿dej rundzie mo¿na zapisaæ stan gry do pliku xml. Gdy gracz nauczy siê wszystkich s³ówek z listy nie jest mo¿liwe rozpoczêcie kolejnej rundy. Nale¿y wtedy wróciæ do pierwszego okna i dodaæ nowe s³ówka.
